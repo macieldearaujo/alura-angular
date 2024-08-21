@@ -7,6 +7,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { BannerComponent } from './shared/banner/banner.component';
 import { CardComponent } from './shared/card/card.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,10 @@ import { CardComponent } from './shared/card/card.component';
     HeaderComponent,
     FooterComponent,
     BannerComponent,
-    CardComponent
+    CardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, MatToolbarModule, MatButtonModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
