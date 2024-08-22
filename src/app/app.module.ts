@@ -9,6 +9,8 @@ import { BannerComponent } from './shared/banner/banner.component';
 import { CardComponent } from './shared/card/card.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { ContainerComponent } from './shared/container/container.component';
+import { HomeComponent } from './shared/pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { MatButtonModule } from '@angular/material/button';
     FooterComponent,
     BannerComponent,
     CardComponent,
+    ContainerComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, MatToolbarModule, MatButtonModule],
   providers: [],
