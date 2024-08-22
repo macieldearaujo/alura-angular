@@ -33,5 +33,25 @@
       <input matInput placeholder="Destino" />
       <mat-icon matSuffix>search</mat-icon>
     </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Selecione</mat-label>
+      <input matInput [matDatepicker]="ida" />
+      <mat-datepicker-toggle matIconSuffix [for]="ida"></mat-datepicker-toggle>
+      <mat-datepicker #ida></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Selecione</mat-label>
+      <input matInput [matDatepicker]="volta" />
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="volta"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #volta></mat-datepicker>
+    </mat-form-field>
+    <button mat-flat-button class="submit-button" color="primary">
+      BUSCAR
+    </button>
   </div>
 </app-card>
