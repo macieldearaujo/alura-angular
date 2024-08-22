@@ -18,6 +18,10 @@ import { FormBuscaComponent } from './shared/form-busca/form-busca.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [
@@ -41,6 +45,10 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonToggleModule,
     MatChipsModule,
     MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    BrowserAnimationsModule,
+    MatDatepickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
