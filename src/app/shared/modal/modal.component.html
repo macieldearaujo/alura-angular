@@ -2,16 +2,25 @@
   <h1 mat-dialog-title>Viajante</h1>
   <mat-dialog-content>
     <div class="wrapper-container">
-      <app-tipos-de-passageiro></app-tipos-de-passageiro>
-      <app-tipos-de-passageiro></app-tipos-de-passageiro>
-      <app-tipos-de-passageiro></app-tipos-de-passageiro>
+      <app-tipos-de-passageiro
+        [tipoIdade]="'Adultos'"
+        [periodoIdade]="'Acima de 12 anos'"
+      ></app-tipos-de-passageiro>
+      <app-tipos-de-passageiro
+        [tipoIdade]="'Crianças'"
+        [periodoIdade]="'(Entre 2 e 11 anos)'"
+      ></app-tipos-de-passageiro>
+      <app-tipos-de-passageiro
+        [tipoIdade]="'Bebês'"
+        [periodoIdade]="'(Até 2 anos)'"
+      ></app-tipos-de-passageiro>
     </div>
 
     <h2 class="subtitle">Categoria</h2>
     <div class="wrapper-container">
       <mat-chip-listbox aria-label="Tipo de passagem">
-        <mat-chip-option default> Econômica </mat-chip-option>
-        <mat-chip-option> Executiva </mat-chip-option>
+        <mat-chip-option selected> Econômica </mat-chip-option>
+        <mat-chip-option>Executiva </mat-chip-option>
       </mat-chip-listbox>
     </div>
   </mat-dialog-content>
