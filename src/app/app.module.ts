@@ -25,6 +25,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ModalComponent } from './shared/modal/modal.component';
+import { TiposDePassageiroComponent } from './shared/modal/tipos-de-passageiro/tipos-de-passageiro.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ModalComponent } from './shared/modal/modal.component';
     CardDepoimentoComponent,
     FormBuscaComponent,
     ModalComponent,
+    TiposDePassageiroComponent,
   ],
   imports: [
     BrowserModule,
